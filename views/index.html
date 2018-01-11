@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Hacker News App</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+<body>
+<div id="disp" >
+	<h3 class="container-fluid">Get top 20 results from Hacker News!</h3>
+    <form action="javascript:searchStories()">
+    <div class=col-xs-3>
+        <input type="text" id="search" class="form-control" placeholder="Enter search keyword">
+    </div>
+   	 <button class="btn btn-default" type="submit" onclick="searchStories()" id="searchBtn"><i class="glyphicon glyphicon-search"></i></button>
+		
+	<div class="btn-group">
+  <button class="btn" onclick="populateTopStories()">Top Stories</button>
+  <button class="btn" onclick="lastXhrs()">Last 24 Hrs</button>
+  <button class="btn" onclick="showAllTimeTop()">All Time Top Rated</button>
+  </form>
+  	</div>	
+
+</div>		
+
+<div  id="results-table">
+<div id="placeholder" class="container-fluid"></div>
+<table class="table-striped table-hover table-responsive" id="populatedata"></table>
+</div>
+
+<div id ="foot">
+	
+	<h4 class="container-fluid">My Bookmarks</h4>
+	<div id="bookmark" class="container-fluid" ></div>
+	<button type="button" class="btn" id="hideBookmark" onclick="clearBookmarks()">Clear Bookmarks</button>
+
+</div>
+
+<p id='newws' ></p>
+
+</body>
+
+<script type="text/javascript" src="client.js"></script>
+</html>

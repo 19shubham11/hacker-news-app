@@ -1,0 +1,19 @@
+{
+  "name": "hacker-news-app",
+  "version": "1.0.0",
+  "description": "An app to get results from hacker news which also supports search",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shubham Chaturvedi",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "mongoose": "^4.10.4",
+    "promise": "^7.1.1",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1"
+  }
+}
